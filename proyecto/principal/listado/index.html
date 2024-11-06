@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Organizador de Tareas</h1>
+            <p>Gestiona tus tareas de manera eficiente y organizada</p>
+        </header>
+        <nav class="tabs">
+            <button id="all" class="active">Todas</button>
+            <button id="active">Activas</button>
+            <button id="completed">Completadas</button>
+        </nav>
+        <main>
+            <section class="task-entry">
+                <input type="text" id="new-task" placeholder="Agregar tarea">
+                <button id="add-task">Agregar</button>
+            </section>
+            <section>
+                <ul id="task-list"></ul>
+            </section>
+            <section class="controls">
+                <button id="delete-all" class="hidden">Eliminar todas</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
